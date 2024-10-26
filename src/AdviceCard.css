@@ -1,0 +1,137 @@
+/* Base styling */
+.advice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0f1a28;
+    padding: 20px;
+}
+
+.advice-card {
+    background-color: #1b2c44;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.advice-title {
+    color: #00ff89;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Quote styling */
+.advice-quote {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Pause Icon Styling */
+.advice-controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pause-icon {
+    width: 400px; 
+    height : 10px;
+}
+
+.dice-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.dice-button {
+    background-color: #0dd460;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dice-button:hover {
+    box-shadow: 0 4px 12px #6ce09c;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .advice-card {
+        padding: 30px;
+        max-width: 90%;
+    }
+  
+    .advice-title {
+        font-size: 12px;
+    }
+
+    .advice-quote {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .dice-button {
+        width: 40px;
+        height: 40px;
+        bottom: -20px;
+    }
+  
+    .dice-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .pause-icon {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .advice-card {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .advice-title {
+        font-size: 10px;
+    }
+
+    .advice-quote {
+        font-size: 14px;
+    }
+
+    .dice-button {
+        width: 30px;
+        height: 30px;
+        bottom: -20px;
+    }
+  
+    .dice-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .pause-icon {
+        width: 200px;
+    }
+}
